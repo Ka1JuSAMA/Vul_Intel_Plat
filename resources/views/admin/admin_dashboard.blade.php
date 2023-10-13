@@ -1,52 +1,71 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="https://laravel.com/img/favicon/favicon-16x16.png"  type='image/x-icon'>
-        <title>Admin Dashboard</title>
-        <link rel="stylesheet" href="{{ asset('') }}../assets/vendor/chartist/css/chartist.min.css">
-        <link href="{{ asset('') }}../assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-        <link href="{{ asset('') }}../assets/css/style.css" rel="stylesheet">
-    </head>
-    <body>
-      <!--**********************************
-        Main wrapper start
-            ***********************************-->
-            <div id="main-wrapper">
-            @include('admin.body.navheader')
-        
-        
-        
-            @include('admin.body.header')
-           
 
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Admin Dashboard">
+	<meta name="author" content="NobleUI">
+	<meta name="keywords" content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
-            @include('admin.body.sidebar')
-        
-        @yield('admin')
+	<title>Admin Dashboard</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- End fonts -->
+
+	<!-- core:css -->
+	<link rel="stylesheet" href="{{ asset('') }}../assets/vendors/core/core.css">
+	<!-- endinject -->
+
+	<!-- Plugin css for this page -->
+	<link rel="stylesheet" href="{{ asset('') }}../assets/vendors/flatpickr/flatpickr.min.css">
+	<!-- End plugin css for this page -->
+
+	<!-- inject:css -->
+	<link rel="stylesheet" href="{{ asset('') }}../assets/fonts/feather-font/css/iconfont.css">
+	<link rel="stylesheet" href="{{ asset('') }}../assets/vendors/flag-icon-css/css/flag-icon.min.css">
+	<!-- endinject -->
+
+  <!-- Layout styles -->  
+	<link rel="stylesheet" href="{{ asset('') }}../assets/css/demo2/style.css">
+  <!-- End layout styles -->
+
+  <link rel="shortcut icon" href="{{ asset('') }}../assets/images/favicon.png" />
+</head>
+<body>
+	<div class="main-wrapper">
+
+		@include('admin.body.sidebar')
+	
+		@include('admin.body.headbar')
+
+		@yield('admin')
             
+        @include('admin.body.footer')
+		
 
-            @include('admin.body.footer')
-        </div>
-       
-        <!--**********************************
-            Scripts
-        ***********************************-->
-        <script src="{{ asset('') }}../assets/vendor/global/global.min.js"></script>
-        <script src="{{ asset('') }}../assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-        <script src="{{ asset('') }}../assets/vendor/chart.js/Chart.bundle.min.js"></script>
-        <!-- Chart piety plugin files -->
-            <script src="{{ asset('') }}../assets/vendor/peity/jquery.peity.min.js"></script>
-        
-        <!-- Apex Chart -->
-        <script src="{{ asset('') }}../assets/vendor/apexchart/apexchart.js"></script>
-        
-        <!-- Dashboard 1 -->
-        <script src="{{ asset('') }}../assets/js/dashboard/dashboard-1.js"></script>
-        
-            <script src="{{ asset('') }}../assets/js/custom.min.js"></script>
-        <script src="{{ asset('') }}../assets/js/deznav-init.js"></script>
-        <script src="{{ asset('') }}../assets/js/demo.js"></script>
-    </body>
-</html>
+	</div>
+	<!-- core:js -->
+	<script src="{{ asset('') }}../assets/vendors/core/core.js"></script>
+	<!-- endinject -->
+
+	<!-- Plugin js for this page -->
+  <script src="{{ asset('') }}../assets/vendors/flatpickr/flatpickr.min.js"></script>
+  <script src="{{ asset('') }}../assets/vendors/apexcharts/apexcharts.min.js"></script>
+	<!-- End plugin js for this page -->
+
+	<!-- inject:js -->
+	<script src="{{ asset('') }}../assets/vendors/feather-icons/feather.min.js"></script>
+	<script src="{{ asset('') }}../assets/js/template.js"></script>
+	<!-- endinject -->
+
+	<!-- Custom js for this page -->
+  <script src="{{ asset('') }}../assets/js/dashboard-dark.js"></script>
+	<!-- End custom js for this page -->
+
+</body>
+</html>    
