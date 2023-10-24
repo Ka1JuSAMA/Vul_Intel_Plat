@@ -54,5 +54,10 @@ Route::middleware(['auth','role:admin'])->group(function (){
         Route::get('/add/asset', 'AddAsset')->name('add.asset');
 
         Route::post('/store/asset', 'StoreAsset')->name('store.asset');
+
+        Route::get('/edit/asset/{id}', 'EditAsset')->name('edit.asset');
+
+        Route::post('/update/asset', 'UpdateAsset')->name('update.asset');
+
     });
 });

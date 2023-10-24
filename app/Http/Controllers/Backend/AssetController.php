@@ -12,13 +12,13 @@ class AssetController extends Controller
     public function AllAsset(){
 
         $assets = AssetType::latest()->get();
-        return view('backend.type.all_asset', compact('assets'));
+        return view('backend.asset.all_asset', compact('assets'));
     }
 
     public function AddAsset(){
 
         
-        return view('backend.type.add_asset');
+        return view('backend.asset.add_asset');
     }
 
     public function StoreAsset(Request $request){
@@ -41,6 +41,35 @@ class AssetController extends Controller
 
         $notification = array(
             'message' => 'New Asset Added Successfully!',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->route('all.asset')->with($notification);
+
+    }
+
+    public function EditAsset($id){
+
+        $assets = AssetType::findOrFail($id);
+        return view('backend.asset.edit_asset', compact('assets'));
+
+    }
+
+    public function UpdateAsset(Request $request){
+
+        $pid = $request->id;
+
+        AssetType::findOrFail($pid)->update([
+
+            'asset_name' => $request->asset_name,
+            'asset_type' => $request->asset_type,
+            'asset_brand' => $request->asset_brand,
+            'asset_status' => $request->asset_status,
+
+        ]);
+
+        $notification = array(
+            'message' => 'Asset Updated Successfully!',
             'alert-type' => 'success'
         );
 

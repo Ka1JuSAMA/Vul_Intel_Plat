@@ -4,7 +4,7 @@
 
     <nav class="page-breadcrumb">
         <ol class="breadcrumb">
-            <a href="{{ route('add.type') }}" class="btn btn-inverse-info"> Add New Asset </a>
+            <a href="{{ route('add.asset') }}" class="btn btn-inverse-info"> Add New Asset </a>
         </ol>
     </nav>
 
@@ -34,7 +34,7 @@
                                 <td>{{ $item->asset_brand }}</td>
                                 <td>{{ $item->asset_status }}</td>
                                 <td>
-                                    <a href="" class="btn btn-inverse-secondary"> Edit </a>
+                                    <a href="{{ route('edit.asset', $item->id) }}" class="btn btn-inverse-secondary"> Edit </a>
                                     <a href="" class="btn btn-inverse-danger"> Delete </a>
                                 </td>
                             </tr>

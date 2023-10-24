@@ -17,7 +17,7 @@
 
                         <h6 class="card-title">Add New Asset</h6>
 
-                        <form method="POST" action="{{ route('store.type') }}" class="forms-sample">
+                        <form method="POST" action="{{ route('store.asset') }}" class="forms-sample">
                             @csrf
             
                             <div class="mb-3">
