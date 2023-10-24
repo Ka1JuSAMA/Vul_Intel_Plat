@@ -9,19 +9,19 @@ use App\Models\AssetType;
 
 class AssetController extends Controller
 {
-    public function AllType(){
+    public function AllAsset(){
 
-        $types = AssetType::latest()->get();
-        return view('backend.type.all_type', compact('types'));
+        $assets = AssetType::latest()->get();
+        return view('backend.type.all_asset', compact('assets'));
     }
 
-    public function AddType(){
+    public function AddAsset(){
 
         
-        return view('backend.type.add_type');
+        return view('backend.type.add_asset');
     }
 
-    public function StoreType(Request $request){
+    public function StoreAsset(Request $request){
 
         $request->validate([
             'asset_name' => 'required',
@@ -44,7 +44,7 @@ class AssetController extends Controller
             'alert-type' => 'success'
         );
 
-        return redirect()->route('all.type')->with($notification);
+        return redirect()->route('all.asset')->with($notification);
 
     }
 }

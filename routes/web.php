@@ -49,10 +49,10 @@ Route::middleware(['auth','role:admin'])->group(function (){
     //Asset route
     Route::controller(AssetController::class)->group(function(){
 
-        Route::get('/all/type', 'AllType')->name('all.type');
+        Route::get('/all/asset', 'AllAsset')->name('all.asset');
 
-        Route::get('/add/type', 'AddType')->name('add.type');
+        Route::get('/add/asset', 'AddAsset')->name('add.asset');
 
-        Route::post('/store/type', 'StoreType')->name('store.type');
+        Route::post('/store/asset', 'StoreAsset')->name('store.asset');
     });
 });

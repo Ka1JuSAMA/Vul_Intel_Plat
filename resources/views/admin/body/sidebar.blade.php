@@ -29,7 +29,7 @@
             <div class="collapse" id="emails">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="{{ route('all.type') }}" class="nav-link">Manage Assets</a>
+                  <a href="{{ route('all.asset') }}" class="nav-link">Manage Assets</a>
                 </li>
                 <li class="nav-item">
                   <a href="pages/email/read.html" class="nav-link">Asset Info</a>

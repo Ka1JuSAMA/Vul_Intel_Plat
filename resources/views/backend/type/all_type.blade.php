@@ -26,7 +26,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            @foreach($types as $key => $item)
+                            @foreach($assets as $key => $item)
                             <tr>
                                 <td class="sorting_1">{{ $key+1 }}</td>
                                 <td>{{ $item->asset_name }}</td>
