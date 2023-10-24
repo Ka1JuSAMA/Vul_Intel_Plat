@@ -3,6 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\Backend\AssetController;
 
 /*
 |--------------------------------------------------------------------------
@@ -44,4 +45,14 @@ Route::middleware(['auth','role:admin'])->group(function (){
     Route::get('/admin/change/password', [AdminController::class, 'AdminChangePassword'])->name('admin.change.password');
 
     Route::post('/admin/update/password', [AdminController::class, 'AdminUpdatePassword'])->name('admin.update.password');
+
+    //Asset route
+    Route::controller(AssetController::class)->group(function(){
+
+        Route::get('/all/type', 'AllType')->name('all.type');
+
+        Route::get('/add/type', 'AddType')->name('add.type');
+
+        Route::post('/store/type', 'StoreType')->name('store.type');
+    });
 });
