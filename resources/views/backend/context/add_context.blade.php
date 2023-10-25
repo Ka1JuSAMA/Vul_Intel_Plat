@@ -17,22 +17,18 @@
 
                         <h6 class="card-title">Add New Context</h6>
 
-                        <form method="POST" action="{{ route('store.context') }}" class="forms-sample">
+                        <form id="myForm" method="POST" action="{{ route('store.context') }}" class="forms-sample">
                             @csrf
             
-                            <div class="mb-3">
+                            <div class="form-group mb-3">
                                 <label for="exampleInputUsername1" class="form-label">Context Name</label>
-                                <input type="text" name="context_name" class="form-control @error('context_name') is-invalid @enderror " id="context_name" autocomplete="off">
-                                @error('context_name')
-                                <span class="text-danger">{{ $message }}</span>
-                                @enderror
+                                <input type="text" name="context_name" class="form-control" id="context_name" autocomplete="off">
+                                
                             </div>
-                            <div class="mb-3">
+                            <div class="form-group mb-3">
                                 <label for="exampleInputUsername1" class="form-label">Context Type</label>
-                                <input type="text" name="context_type" class="form-control @error('context_type') is-invalid @enderror " id="context_type" autocomplete="off">
-                                @error('context_type')
-                                <span class="text-danger">{{ $message }}</span>
-                                @enderror
+                                <input type="text" name="context_type" class="form-control" id="context_type" autocomplete="off">
+                               
                             </div>
 
                             <button type="submit" class="btn btn-primary me-2">Add</button>
@@ -57,7 +53,43 @@
 
 			</div>
 
-        
+<script type="text/javascript">
+    $(document).ready(function (){
+        $('#myForm').validate({
+            rules: {
+              context_name: {
+                    required : true,
+                }, 
+              context_type: {
+                    required : true,
+                }, 
+                
+            },
+            messages :{
+              context_name: {
+                    required : 'Please Enter context name',
+                }, 
+              context_type: {
+                    required : 'Please Enter context type',
+                }, 
+                 
+
+            },
+            errorElement : 'span', 
+            errorPlacement: function (error,element) {
+                error.addClass('invalid-feedback');
+                element.closest('.form-group').append(error);
+            },
+            highlight : function(element, errorClass, validClass){
+                $(element).addClass('is-invalid');
+            },
+            unhighlight : function(element, errorClass, validClass){
+                $(element).removeClass('is-invalid');
+            },
+        });
+    });
+    
+</script>      
 
 
 @endsection
