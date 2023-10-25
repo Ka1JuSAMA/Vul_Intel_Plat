@@ -62,4 +62,21 @@ Route::middleware(['auth','role:admin'])->group(function (){
         Route::get('/delete/asset/{id}', 'DeleteAsset')->name('delete.asset');
 
     });
+
+    //Business context route
+    Route::controller(AssetController::class)->group(function(){
+
+        Route::get('/all/context', 'AllContext')->name('all.context');
+
+        Route::get('/add/context', 'AddContext')->name('add.context');
+
+        Route::post('/store/context', 'StoreContext')->name('store.context');
+
+        Route::get('/edit/context/{id}', 'EditContext')->name('edit.context');
+
+        Route::post('/update/context', 'UpdateContext')->name('update.context');
+
+        Route::get('/delete/context/{id}', 'DeleteContext')->name('delete.context');
+
+    });
 });

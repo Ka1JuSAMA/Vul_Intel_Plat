@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\AssetType;
+use App\Models\BusinessContext;
 
 class AssetController extends Controller
 {
@@ -84,6 +85,85 @@ class AssetController extends Controller
 
         $notification = array(
             'message' => 'Asset Deleted Successfully!',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->back()->with($notification);
+
+    }
+
+    /////////////////////// methods for context ///////////////////////////
+
+    public function AllContext(){
+
+        $contexts = BusinessContext::latest()->get();
+        return view('backend.context.all_context', compact('contexts'));
+    }
+
+    public function AddContext(){
+
+        
+        return view('backend.context.add_context');
+    }
+
+    public function StoreContext(Request $request){
+
+        $request->validate([
+            'context_name' => 'required',
+            'context_type' => 'required',
+           
+        ]);
+
+        BusinessContext::insert([
+
+            'context_name' => $request->context_name,
+            'context_type' => $request->context_type,
+
+        ]);
+
+        $notification = array(
+            'message' => 'New Asset Added Successfully!',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->route('all.context')->with($notification);
+
+    }
+
+    public function EditContext($id){
+
+        $contexts = BusinessContext::findOrFail($id);
+        return view('backend.context.edit_context', compact('contexts'));
+
+    }
+
+    public function UpdateContext(Request $request){
+
+        $pid = $request->id;
+
+        BusinessContext::findOrFail($pid)->update([
+
+            'context_name' => $request->context_name,
+            'context_type' => $request->context_type,
+
+        ]);
+
+        $notification = array(
+            'message' => 'Context Updated Successfully!',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->route('all.context')->with($notification);
+
+    }
+
+
+    public function DeleteContext($id){
+
+        BusinessContext::findOrFail($id)->delete();
+
+        $notification = array(
+            'message' => 'Context Deleted Successfully!',
             'alert-type' => 'success'
         );
 
