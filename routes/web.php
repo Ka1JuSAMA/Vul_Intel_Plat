@@ -59,5 +59,7 @@ Route::middleware(['auth','role:admin'])->group(function (){
 
         Route::post('/update/asset', 'UpdateAsset')->name('update.asset');
 
+        Route::get('/delete/asset/{id}', 'DeleteAsset')->name('delete.asset');
+
     });
 });

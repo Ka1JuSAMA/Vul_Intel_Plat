@@ -28,14 +28,14 @@
                             <tbody>
                             @foreach($assets as $key => $item)
                             <tr>
-                                <td class="sorting_1">{{ $key+1 }}</td>
+                                <td class="sorting_1">{{ $item->id }}</td>
                                 <td>{{ $item->asset_name }}</td>
                                 <td>{{ $item->asset_type }}</td>
                                 <td>{{ $item->asset_brand }}</td>
                                 <td>{{ $item->asset_status }}</td>
                                 <td>
                                     <a href="{{ route('edit.asset', $item->id) }}" class="btn btn-inverse-secondary"> Edit </a>
-                                    <a href="" class="btn btn-inverse-danger"> Delete </a>
+                                    <a href="{{ route('delete.asset', $item->id) }}" class="btn btn-inverse-danger" id="delete"> Delete </a>
                                 </td>
                             </tr>
                             @endforeach

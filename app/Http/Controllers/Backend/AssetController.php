@@ -76,4 +76,18 @@ class AssetController extends Controller
         return redirect()->route('all.asset')->with($notification);
 
     }
+
+
+    public function DeleteAsset($id){
+
+        AssetType::findOrFail($id)->delete();
+
+        $notification = array(
+            'message' => 'Asset Deleted Successfully!',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->back()->with($notification);
+
+    }
 }
