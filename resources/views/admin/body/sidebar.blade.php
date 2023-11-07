@@ -2,7 +2,7 @@
 <nav class="sidebar">
       <div class="sidebar-header">
         <a href="#" class="sidebar-brand">
-          Noble<span>UI</span>
+          V.I.<span>Platform</span>
         </a>
         <div class="sidebar-toggler not-active">
           <span></span>
@@ -19,7 +19,7 @@
               <span class="link-title">Dashboard</span>
             </a>
           </li>
-          <li class="nav-item nav-category">web apps</li>
+          <li class="nav-item nav-category">Asset Management</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#emails" role="button" aria-expanded="false" aria-controls="emails">
               <i class="link-icon" data-feather="mail"></i>
@@ -49,26 +49,26 @@
               <span class="link-title">Calendar</span>
             </a>
           </li>
-          <li class="nav-item nav-category">Components</li>
+          <li class="nav-item nav-category">Vulnerability Scan</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#uiComponents" role="button" aria-expanded="false" aria-controls="uiComponents">
               <i class="link-icon" data-feather="feather"></i>
-              <span class="link-title">UI Kit</span>
+              <span class="link-title">Basic Scan</span>
               <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
             <div class="collapse" id="uiComponents">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="pages/ui-components/accordion.html" class="nav-link">Accordion</a>
+                  <a href="pages/ui-components/accordion.html" class="nav-link">Advanced Scan</a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/ui-components/alerts.html" class="nav-link">Alerts</a>
+                  <a href="pages/ui-components/alerts.html" class="nav-link">Basic Scan</a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/ui-components/badges.html" class="nav-link">Badges</a>
+                  <a href="pages/ui-components/badges.html" class="nav-link">Scan Report</a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/ui-components/breadcrumbs.html" class="nav-link">Breadcrumbs</a>
+                  <a href="pages/ui-components/breadcrumbs.html" class="nav-link">Scan History</a>
                 </li>
                 <li class="nav-item">
                   <a href="pages/ui-components/buttons.html" class="nav-link">Buttons</a>
@@ -133,7 +133,7 @@
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#advancedUI" role="button" aria-expanded="false" aria-controls="advancedUI">
               <i class="link-icon" data-feather="anchor"></i>
-              <span class="link-title">Advanced UI</span>
+              <span class="link-title">Advanced Scan</span>
               <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
             <div class="collapse" id="advancedUI">
@@ -156,7 +156,7 @@
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#forms" role="button" aria-expanded="false" aria-controls="forms">
               <i class="link-icon" data-feather="inbox"></i>
-              <span class="link-title">Forms</span>
+              <span class="link-title">Scan Report</span>
               <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
             <div class="collapse" id="forms">
@@ -225,7 +225,7 @@
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#icons" role="button" aria-expanded="false" aria-controls="icons">
               <i class="link-icon" data-feather="smile"></i>
-              <span class="link-title">Icons</span>
+              <span class="link-title">Scan History</span>
               <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
             <div class="collapse" id="icons">
@@ -242,11 +242,11 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item nav-category">Pages</li>
+          <li class="nav-item nav-category">Threat Intelligence</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" role="button" aria-expanded="false" aria-controls="general-pages">
               <i class="link-icon" data-feather="book"></i>
-              <span class="link-title">Special pages</span>
+              <span class="link-title">Malware Attack</span>
               <i class="link-arrow" data-feather="chevron-down"></i>
             </a>
             <div class="collapse" id="general-pages">
@@ -272,6 +272,42 @@
               </ul>
             </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#authPages" role="button" aria-expanded="false" aria-controls="authPages">
+              <i class="link-icon" data-feather="unlock"></i>
+              <span class="link-title">Security Info</span>
+              <i class="link-arrow" data-feather="chevron-down"></i>
+            </a>
+            <div class="collapse" id="authPages">
+              <ul class="nav sub-menu">
+                <li class="nav-item">
+                  <a href="pages/auth/login.html" class="nav-link">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/auth/register.html" class="nav-link">Register</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#errorPages" role="button" aria-expanded="false" aria-controls="errorPages">
+              <i class="link-icon" data-feather="cloud-off"></i>
+              <span class="link-title">Error</span>
+              <i class="link-arrow" data-feather="chevron-down"></i>
+            </a>
+            <div class="collapse" id="errorPages">
+              <ul class="nav sub-menu">
+                <li class="nav-item">
+                  <a href="pages/error/404.html" class="nav-link">404</a>
+                </li>
+                <li class="nav-item">
+                  <a href="pages/error/500.html" class="nav-link">500</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          
+           <li class="nav-item nav-category">User Support</li>
           <li class="nav-item">
             <a class="nav-link" data-bs-toggle="collapse" href="#authPages" role="button" aria-expanded="false" aria-controls="authPages">
               <i class="link-icon" data-feather="unlock"></i>
@@ -306,13 +342,13 @@
               </ul>
             </div>
           </li>
-          <li class="nav-item nav-category">Docs</li>
           <li class="nav-item">
             <a href="https://www.nobleui.com/html/documentation/docs.html" target="_blank" class="nav-link">
               <i class="link-icon" data-feather="hash"></i>
               <span class="link-title">Documentation</span>
             </a>
           </li>
+
         </ul>
       </div>
     </nav>
