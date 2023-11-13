@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\Backend\AssetController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -77,6 +78,24 @@ Route::middleware(['auth','role:admin'])->group(function (){
         Route::post('/update/context', 'UpdateContext')->name('update.context');
 
         Route::get('/delete/context/{id}', 'DeleteContext')->name('delete.context');
+
+    });
+
+
+    //Post route
+    Route::controller(AssetController::class)->group(function(){
+
+        Route::get('/all/post', 'AllPost')->name('all.post');
+
+        Route::get('/add/post', 'AddPost')->name('add.post');
+
+        Route::post('/store/post', 'StorePost')->name('store.post');
+
+        Route::get('/edit/post/{id}', 'EditPost')->name('edit.post');
+
+        Route::post('/update/post', 'UpdatePost')->name('update.post');
+
+        Route::get('/delete/post/{id}', 'DeletePost')->name('delete.post');
 
     });
 });

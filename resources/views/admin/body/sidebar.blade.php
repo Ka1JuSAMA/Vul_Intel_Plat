@@ -281,7 +281,7 @@
             <div class="collapse" id="authPages">
               <ul class="nav sub-menu">
                 <li class="nav-item">
-                  <a href="pages/auth/login.html" class="nav-link">Login</a>
+                  <a href="{{ route('all.post') }}" class="nav-link">Blog Posts</a>
                 </li>
                 <li class="nav-item">
                   <a href="pages/auth/register.html" class="nav-link">Register</a>

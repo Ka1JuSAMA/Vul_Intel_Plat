@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\AssetType;
 use App\Models\BusinessContext;
+use App\Models\Post;
 
 class AssetController extends Controller
 {
@@ -164,6 +165,89 @@ class AssetController extends Controller
 
         $notification = array(
             'message' => 'Context Deleted Successfully!',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->back()->with($notification);
+
+    }
+
+
+    /////////////////////// methods for post ///////////////////////////
+
+    public function AllPost(){
+
+        $posts = Post::latest()->get();
+        $posts = Post::paginate(5); // 5 is the number of items per page
+
+        return view('backend.blog.all_post', compact('posts'));
+    }
+
+    public function AddPost(){
+
+        
+        return view('backend.blog.add_post');
+    }
+
+    public function StorePost(Request $request){
+
+        $request->validate([
+            'post_name' => 'required',
+            'post_type' => 'required',
+           
+        ]);
+
+        Post::insert([
+
+            'post_name' => $request->post_name,
+            'post_type' => $request->post_type,
+            'created_at' => now()
+
+        ]);
+
+        $notification = array(
+            'message' => 'New Post Added Successfully!',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->route('all.post')->with($notification);
+
+    }
+
+    public function EditPost($id){
+
+        $posts = Post::findOrFail($id);
+        return view('backend.blog.edit_post', compact('posts'));
+
+    }
+
+    public function UpdatePost(Request $request){
+
+        $pid = $request->id;
+
+        Post::findOrFail($pid)->update([
+
+            'post_name' => $request->post_name,
+            'post_type' => $request->post_type,
+
+        ]);
+
+        $notification = array(
+            'message' => 'Post Updated Successfully!',
+            'alert-type' => 'success'
+        );
+
+        return redirect()->route('all.post')->with($notification);
+
+    }
+
+
+    public function DeletePost($id){
+
+        Post::findOrFail($id)->delete();
+
+        $notification = array(
+            'message' => 'Post Deleted Successfully!',
             'alert-type' => 'success'
         );
 
