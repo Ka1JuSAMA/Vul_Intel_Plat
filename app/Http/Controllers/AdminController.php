@@ -6,12 +6,18 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
+use App\Models\AssetType;
+use App\Models\BusinessContext;
+use App\Models\Post;
 
 class AdminController extends Controller
 {
     public function AdminDashboard(){
 
-        return view('admin.index');
+        $assets = AssetType::all();
+        $contexts = BusinessContext::all();
+
+        return view('admin.index', compact('assets','contexts'));
     }
 
     public function AdminLogout(Request $request){

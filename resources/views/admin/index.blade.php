@@ -29,7 +29,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="d-flex justify-content-between align-items-baseline">
-                      <h6 class="card-title mb-0">New Customers</h6>
+                      <h6 class="card-title mb-0">New Assets</h6>
                       <div class="dropdown mb-2">
                         <a type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
@@ -45,7 +45,7 @@
                     </div>
                     <div class="row">
                       <div class="col-6 col-md-12 col-xl-5">
-                        <h3 class="mb-2">3,897</h3>
+                        <h3 class="mb-2">{{ $assets->count() }}</h3>
                         <div class="d-flex align-items-baseline">
                           <p class="text-success">
                             <span>+3.3%</span>
@@ -64,7 +64,7 @@
                 <div class="card">
                   <div class="card-body">
                     <div class="d-flex justify-content-between align-items-baseline">
-                      <h6 class="card-title mb-0">New Orders</h6>
+                      <h6 class="card-title mb-0">New Business Context</h6>
                       <div class="dropdown mb-2">
                         <a type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="icon-lg text-muted pb-3px" data-feather="more-horizontal"></i>
@@ -80,7 +80,7 @@
                     </div>
                     <div class="row">
                       <div class="col-6 col-md-12 col-xl-5">
-                        <h3 class="mb-2">35,084</h3>
+                        <h3 class="mb-2">{{ $contexts->count() }}</h3>
                         <div class="d-flex align-items-baseline">
                           <p class="text-danger">
                             <span>-2.8%</span>
