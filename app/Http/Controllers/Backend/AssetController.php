@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\AssetType;
 use App\Models\BusinessContext;
 use App\Models\Post;
+use App\Models\Photo;
 
 class AssetController extends Controller
 {
@@ -197,13 +198,31 @@ class AssetController extends Controller
            
         ]);
 
-        Post::insert([
 
-            'post_name' => $request->post_name,
-            'post_type' => $request->post_type,
-            'created_at' => now()
+        if ($request->file('photo')){
+            $filename = date('YmdHi').'_'.$request->file('photo')->getClientOriginalName();
+            $request->file('photo')->move(public_path('upload/post_images'), $filename);
 
-        ]);
+            $photo = new Photo();
+            $photo->image_path = $filename;
+            
+            Post::insert([
+                'post_name' => $request->post_name,
+                'post_type' => $request->post_type,
+                'photo' => $filename,
+            
+            ]);
+        } else {
+            Post::insert([
+
+                'post_name' => $request->post_name,
+                'post_type' => $request->post_type,
+                // 'photo' => $filename,
+                'created_at' => now()
+    
+            ]);
+        }
+
 
         $notification = array(
             'message' => 'New Post Added Successfully!',
@@ -229,6 +248,7 @@ class AssetController extends Controller
 
             'post_name' => $request->post_name,
             'post_type' => $request->post_type,
+            'photo' => $request->photo,
 
         ]);
 

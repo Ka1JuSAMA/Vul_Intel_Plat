@@ -18,7 +18,7 @@
 
                         <h6 class="card-title">Add New Post</h6>
 
-                        <form id="myForm" method="POST" action="{{ route('store.post') }}" class="forms-sample">
+                        <form id="myForm" method="POST" action="{{ route('store.post') }}" class="forms-sample" enctype="multipart/form-data">
                             @csrf
             
                             <div class="form-group mb-3">
@@ -31,7 +31,10 @@
                                 
                                 <textarea class="form-control" type="text" name="post_type" id="post_type" rows="5"></textarea>
                             </div>
-                          
+                            <div class="mb-3">
+                                <label for="exampleInputPassword1" class="form-label">Photo</label>
+                                <input class="form-control" type="file" name="photo" id="photo">                            
+                            </div>
                             
                             <button type="submit" class="btn btn-primary me-2">Post</button>
                             

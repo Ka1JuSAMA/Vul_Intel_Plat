@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id()->unique();
             $table->string('post_name');
             $table->string('post_type')->nullable();
+            $table->string('photo')->nullable();
             $table->timestamps();
         });
     }

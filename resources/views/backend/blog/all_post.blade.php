@@ -41,7 +41,12 @@
 
                     <div class="card">
                     @foreach($posts as $key => $item)
-                        <img src="https://securityintelligence.com/wp-content/uploads/2023/06/Cybersecurity-cybercrime-internet-scam-business-Cyber-security-platform-VPN-computer-privacy-protection-data-hacking-malware-virus-attack-defense-online-network-IoT-digital-techn.jpeg" class="card-img-top" alt="...">
+                        @if (filter_var($item->photo, FILTER_VALIDATE_URL))
+                        <img src="{{ $item->photo }}" class="card-img-top" alt="...">
+                        @else
+                        <img src="{{ url('upload/post_images/'.$item->photo) }}" class="card-img-top" alt="...">
+                        @endif
+
                         <div class="card-body">
                         <h5 class="card-title">{{ $item->post_name }}</h5>
                         @if(is_null($item->created_at) || !is_null($item->updated_at))
