@@ -43,6 +43,8 @@
                     @foreach($posts as $key => $item)
                         @if (filter_var($item->photo, FILTER_VALIDATE_URL))
                         <img src="{{ $item->photo }}" class="card-img-top" alt="...">
+                        @elseif (is_null($item->photo))
+                        <p>  </p>
                         @else
                         <img src="{{ url('upload/post_images/'.$item->photo) }}" class="card-img-top" alt="...">
                         @endif
