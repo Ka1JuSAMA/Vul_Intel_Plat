@@ -29,6 +29,10 @@ Route::get('/calendar', function () {
     return view('/admin/calendar');
 });
 
+Route::get('/News_Feed', function () {
+    return view('/admin/news_feed');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
