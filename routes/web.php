@@ -41,6 +41,10 @@ Route::get('/advanced_scan', function () {
     return view('/admin/advanced_scan');
 });
 
+Route::get('/scan_report', function () {
+    return view('/admin/scan_report');
+});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
