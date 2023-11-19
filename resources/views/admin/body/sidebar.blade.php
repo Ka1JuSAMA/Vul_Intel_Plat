@@ -284,7 +284,7 @@
                   <a href="{{ route('all.post') }}" class="nav-link">Blog Posts</a>
                 </li>
                 <li class="nav-item">
-                  <a href="pages/auth/register.html" class="nav-link">Register</a>
+                  <a href="/cvss_calculator" class="nav-link">CVSS Calculator</a>
                 </li>
               </ul>
             </div>
