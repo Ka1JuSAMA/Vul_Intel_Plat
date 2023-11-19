@@ -1,61 +1,53 @@
 @extends('admin.admin_dashboard')
 @section('admin')
 
+<!-- core:css -->
+  <link rel="stylesheet" href="{{ asset(  'backend/assets/vendors/core/core.css' ) }}">
+  <!-- endinject -->
 
-<div class="page-content">
+  <!-- Plugin css for this page -->
+  <link rel="stylesheet" href="{{ asset(  'backend/assets/vendors/prismjs/themes/prism.css' ) }}">
+  <!-- End plugin css for this page -->
 
- <nav class="page-breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#">News Feed</a></li>
-          </ol>
-  </nav>
+  <!-- inject:css -->
+  <link rel="stylesheet" href="{{ asset(  'backend/assets/fonts/feather-font/css/iconfont.css' ) }}">
+  <link rel="stylesheet" href="{{ asset(  'backend/assets/vendors/flag-icon-css/css/flag-icon.min.css' ) }}">
+  <!-- endinject -->
 
- <div class="row">
-  <div class="col-md-12 grid-margin stretch-card">
-     <div class="card">
-         <div class="card-body">
-            <h6 class="card-title">News</h6>
-                <div class="owl-carousel owl-theme owl-auto-play">
-                  <div class="item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiC0yPIwP5bfBuSCE9ftxOKB14Q9wDETTDMIwGc8Lq57CS3DzLm2IIfg6u6aUH6oPsKw4&usqp=CAU" width="265" height="167" alt="item-image">
+  <!-- Layout styles -->  
+  <link rel="stylesheet" href="{{ asset(  'backend/assets/css/demo2/style.css' ) }}">
+  <!-- End layout styles -->
+
+  <link rel="stylesheet" href="{{ asset(  'backend/assets/images/favicon.png' ) }}">
+
+
+
+      <div class="page-content">
+        <div class="row">
+          <div class="col-xl-10 main-content ps-xl-4 pe-xl-5">
+            <h1 class="page-title">Auto Play</h1>
+            <p class="lead">A slideshow component for cycling through elements—images or slides of text—like a carousel. Read the <a href="https://getbootstrap.com/docs/5.1/components/carousel/" target="_blank">Official Bootstrap Documentation</a> for a full list of instructions and other options.</p>
+            
+
+            <div class="example">
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://images.7news.com.au/publication/C-12496133/293b4c0c9b1d807e9ed2685201ea81f6038f9d9d-4x3-x500y0w1500h1125.png?imwidth=1100&impolicy=sevennews_v2" width="500" height="350" alt="...">
                   </div>
-                  <div class="item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzabAbcTvabrFrjSmXXzg2OXpMJNEUx2nU4V-GES1GxeMISCJHOFDg19omHZMuLCmTW4A&usqp=CAU" width="265" height="167" alt="item-image">
+                  <div class="carousel-item">
+                    <img src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories//February2013/cyberattack-anatomy-small_012813031640.jpg" width="500" height="350" alt="...">
                   </div>
-                  <div class="item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT6rWjCqYHB1m9ItYcB0X5JE7-VaJdAavVVBeTioesRqjMPe6Da_0v8LP7j7kvdf-DqhI&usqp=CAU" width="265" height="167" alt="item-image">
-                  </div>
-                  <div class="item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5CRa2G98bTNEk-SYTbgWRNjcBk_w_0TEeGrBb6htHMx64OPWlNPAnGSI_t-FSOw3Xnd4&usqp=CAU" width="265" height="167" alt="item-image">
-                  </div>
-                  <div class="item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAnqZyn0qvbNfJURUADT6zTaJGdIJ-SnzBlLQq3bWzOXWISRGbDo0lVvXbOqzoB1K1VgM&usqp=CAU" width="265" height="167" alt="item-image">
-                  </div>
-                  <div class="item">
-                    <img src="https://static.toiimg.com/thumb/msid-82361211,width-400,resizemode-4/82361211.jpg" width="265" height="167" alt="item-image">
-                  </div>
-                  <div class="item">
-                    <img src="https://s.france24.com/media/display/243ebbc8-7fbd-11ee-997d-005056a97e36/w:480/p:16x9/capture-179492563654e15529b5881.23962314.jpg" width="265" height="167" alt="item-image">
-                  </div>
-                  <div class="item">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3rJywMU3qc5wFks0g6oGYEKK5McSoeaS5ev5Yhgy8iALwn5Qpenz70MfPfxYbeRQo4E0&usqp=CAU" width="265" height="167" alt="item-image">
-                  </div>
-                  <div class="item">
-                    <img src="https://akm-img-a-in.tosshub.com/sites/btmt/images/stories//February2013/cyberattack-anatomy-small_012813031640.jpg" width="265" height="167" alt="item-image">
-                  </div>
-                  <div class="item">
-                    <img src="https://news-cdn.softpedia.com/images/news2/Russian-Hackers-Allegedly-Behind-White-House-Network-Cyber-Attack-477916-2.jpg" width="265" height="167" alt="item-image">
-                  </div>
-                  <div class="item">
-                    <img src="https://images.7news.com.au/publication/C-12496133/293b4c0c9b1d807e9ed2685201ea81f6038f9d9d-4x3-x500y0w1500h1125.png?imwidth=1100&impolicy=sevennews_v2" width="265" height="167" alt="item-image">
-                  </div>
-                  <div class="item">
-                    <img src="https://www.coderedcomms.com/app/uploads/2023/09/Top-Cybersecurity-News-From-July-2023-1.png" width="265" height="167" alt="item-image">
+                  <div class="carousel-item">
+                    <img src="https://www.coderedcomms.com/app/uploads/2023/09/Top-Cybersecurity-News-From-July-2023-1.png" width="500" height="350" alt="...">
                   </div>
                 </div>
+              </div>
             </div>
-      </div>
-   </div>
+            <figure class="highlight" id="slidesOnly">
+<pre><code class="language-markup"><script type="script/prism-html-markup">New Feeds</script></code></pre>
+              <button type="button" class="btn btn-clipboard" data-clipboard-target="#slidesOnly">copy</button>
+            </figure>
 
 
         <div class="row">
@@ -122,5 +114,25 @@
           </div>
         </div>
       </div>
+
+
+
+<!-- core:js -->
+  <script src="{{ asset(  'backend/assets/vendors/core/core.js' ) }}"></script>
+  <!-- endinject -->
+
+  <!-- Plugin js for this page -->
+  <script src="{{ asset(  'backend/assets/vendors/prismjs/prism.js' ) }}"></script>
+  <script src="{{ asset(  'backend/assets/vendors/clipboard/clipboard.min.js' ) }}"></script>
+  <!-- End plugin js for this page -->
+
+  <!-- inject:js -->
+  <script src="{{ asset(  'backend/assets/vendors/feather-icons/feather.min.js' ) }}"></script>
+  <script src="{{ asset(  'backend/assets/js/template.js' ) }}"></script>
+  <!-- endinject -->
+
+  <!-- Custom js for this page -->
+  <!-- End custom js for this page -->
+
 
 @endsection
