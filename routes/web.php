@@ -21,6 +21,10 @@ Route::get('/', function () {
     return view('auth/login');
 });
 
+Route::get('/cvss_calculator', function () {
+    return view('/admin/cvss_calculator');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -46,6 +50,7 @@ Route::middleware(['auth','role:admin'])->group(function (){
     Route::get('/admin/change/password', [AdminController::class, 'AdminChangePassword'])->name('admin.change.password');
 
     Route::post('/admin/update/password', [AdminController::class, 'AdminUpdatePassword'])->name('admin.update.password');
+
 
     //Asset route
     Route::controller(AssetController::class)->group(function(){
