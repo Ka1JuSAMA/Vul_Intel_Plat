@@ -28,19 +28,19 @@
                     <div id='external-events' class='external-events'>
                       <h6 class="mb-2 text-muted">Draggable Events</h6>
                       <div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
-                        <div class='fc-event-main'>Birth Day</div>
+                        <div class='fc-event-main'>Assignment 1 Due</div>
                       </div>
                       <div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
-                        <div class='fc-event-main'>New Project</div>
+                        <div class='fc-event-main'>Presentation Due</div>
                       </div>
                       <div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
-                        <div class='fc-event-main'>Anniversary</div>
+                        <div class='fc-event-main'>Laravel Project Start</div>
                       </div>
                       <div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
-                        <div class='fc-event-main'>Clent Meeting</div>
+                        <div class='fc-event-main'>Client Meeting</div>
                       </div>
                       <div class='fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event'>
-                        <div class='fc-event-main'>Office Trip</div>
+                        <div class='fc-event-main'>End of Trimester</div>
                       </div>
                     </div>
 									</div>
