@@ -25,6 +25,10 @@ Route::get('/cvss_calculator', function () {
     return view('/admin/cvss_calculator');
 });
 
+Route::get('/calendar', function () {
+    return view('/admin/calendar');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
