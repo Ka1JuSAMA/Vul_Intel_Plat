@@ -32,11 +32,11 @@
 	<!-- endinject -->
 
 
-	  <!-- Plugin css for this page -->
+	  <!-- Plugin css for news feed -->
   <link rel="stylesheet" href="{{ asset(  'backend/assets/vendors/owl.carousel/owl.carousel.min.css' ) }}">
   <link rel="stylesheet" href="{{ asset(  'backend/assets/vendors/owl.carousel/owl.theme.default.min.css' ) }}">
   <link rel="stylesheet" href="{{ asset(  'backend/assets/vendors/animate.css/animate.min.css' ) }}">
-  <!-- End plugin css for this page -->
+  <!-- End plugin css for news feed -->
 
 
   <!-- Layout styles -->  
@@ -45,6 +45,12 @@
   <link rel="shortcut icon" href="{{ asset(  'backend/assets/images/favicon.png' ) }}" />
 
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" >
+
+  	<!-- Plugin css for calendar -->
+	<link rel="stylesheet" href="{{ asset(  'backend/assets/vendors/fullcalendar/main.min.css' ) }}">
+	<!-- End plugin css for calendar -->
+
+
 
 </head>
 <body>
@@ -135,6 +141,9 @@
   <!-- Custom js for News Feed -->
   <script src="{{ asset('backend/assets/js/carousel.js' ) }}"></script>
   <!-- End custom js for News Feed -->
+
+
+  
 
 </body>
 </html>    
