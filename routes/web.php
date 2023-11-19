@@ -29,30 +29,6 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/News_Feed', function () {
-    return view('/admin/news_feed');
-});
-
-Route::get('/calendar', function () {
-    return view('/admin/calendar');
-});
-
-Route::get('/basic_scan', function () {
-    return view('/admin/basic_scan');
-});
-
-Route::get('/advanced_scan', function () {
-    return view('/admin/advanced_scan');
-});
-
-Route::get('/scan_report', function () {
-    return view('/admin/scan_report');
-});
-
-Route::get('/scan_history', function () {
-    return view('/admin/scan_history');
-});
-
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
