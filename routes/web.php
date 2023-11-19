@@ -37,6 +37,10 @@ Route::get('/basic_scan', function () {
     return view('/admin/basic_scan');
 });
 
+Route::get('/advanced_scan', function () {
+    return view('/admin/advanced_scan');
+});
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
