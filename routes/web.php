@@ -45,6 +45,9 @@ Route::get('/scan_report', function () {
     return view('/admin/scan_report');
 });
 
+Route::get('/scan_history', function () {
+    return view('/admin/scan_history');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
