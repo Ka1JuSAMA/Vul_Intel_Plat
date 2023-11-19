@@ -25,9 +25,7 @@
       <div class="page-content">
         <div class="row">
           <div class="col-xl-10 main-content ps-xl-4 pe-xl-5">
-            <h1 class="page-title">Auto Play</h1>
-            <p class="lead">A slideshow component for cycling through elements—images or slides of text—like a carousel. Read the <a href="https://getbootstrap.com/docs/5.1/components/carousel/" target="_blank">Official Bootstrap Documentation</a> for a full list of instructions and other options.</p>
-            
+            <h1 class="page-title">Cyber News</h1>            
 
             <div class="example">
               <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
@@ -44,10 +42,14 @@
                 </div>
               </div>
             </div>
+            
             <figure class="highlight" id="slidesOnly">
-<pre><code class="language-markup"><script type="script/prism-html-markup">New Feeds</script></code></pre>
-              <button type="button" class="btn btn-clipboard" data-clipboard-target="#slidesOnly">copy</button>
-            </figure>
+<pre><code class="language-markup"><script type="script/prism-html-markup"></script></code></pre>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec posuere sem. Aliquam ligula augue, ultricies fringilla luctus at, mollis eget purus. Pellentesque eu nulla eu leo iaculis fringilla at at tellus. Sed id nunc sodales, blandit velit eu, pretium nunc. Maecenas eu faucibus sapien. Cras elementum facilisis risus, nec consectetur tortor tempus a. Duis velit velit, feugiat quis sagittis sed, ultricies pulvinar sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam fringilla rhoncus ligula, a lacinia orci dapibus eget. Phasellus mauris est, consequat non ultricies in, euismod mattis quam. Curabitur vel vulputate nunc.
+
+Vestibulum interdum enim a justo iaculis iaculis. Aliquam eu elit eu lectus luctus commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean cursus quis massa ut iaculis. Phasellus rhoncus mauris in augue egestas viverra. Aenean in mattis magna. Vivamus in sollicitudin lacus. Pellentesque interdum ex a dui tincidunt facilisis. Proin semper nisl nec mollis tincidunt. Quisque elementum mauris vel interdum ultricies. Nullam gravida vehicula tortor quis rhoncus. Nulla et iaculis risus. Integer volutpat mi vitae porttitor pulvinar. Integer vitae lectus interdum magna convallis venenatis.</p>
+<a href="#" class="btn btn-primary">Read More</a>
+</figure>
 
 
         <div class="row">
@@ -59,26 +61,24 @@
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingOne">
                       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        What is Lorem Ipsum?
+                        Why is Cyber Security inmportant?
                       </button>
                     </h2>
                     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#FaqAccordion">
                       <div class="accordion-body">
-                        <strong>Lorem Ipsum</strong> is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        <strong>Lorem Ipsum</strong> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse potenti. Morbi et dui convallis, iaculis nisl et, pellentesque velit. Nam pharetra lacus tincidunt lacinia dapibus. Morbi rhoncus imperdiet libero, mollis molestie lectus bibendum eget. Nam mollis, risus cursus vestibulum molestie, lorem elit egestas libero, sed auctor augue lectus at dui. Nulla enim lorem, commodo nec nunc et, accumsan blandit sem.
                       </div>
                     </div>
                   </div>
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="headingTwo">
                       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Where does it come from?
+                        What can we do to protect it?
                       </button>
                     </h2>
                     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#FaqAccordion">
                       <div class="accordion-body">
-                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                      Sed dapibus lorem id dui tincidunt, pharetra consectetur dui consequat. Morbi quis congue lacus. Aenean nec fringilla nisi. Pellentesque in quam in tellus faucibus egestas. Curabitur id lectus orci. Praesent laoreet interdum augue suscipit suscipit. Aenean et vehicula mauris. Suspendisse potenti. Suspendisse porttitor, nisl sed sollicitudin dignissim, arcu metus scelerisque felis, in porta mi lacus et risus. Aenean commodo nibh augue, nec porta diam consectetur nec. Sed ornare dictum suscipit. Phasellus tempor interdum feugiat. Vestibulum in vestibulum ligula. Morbi quis orci et felis luctus luctus eget vel orci. Maecenas lacinia orci magna, in sagittis risus pulvinar nec. Nullam hendrerit nibh tempus elit lobortis auctor.
                       </div>
                     </div>
                   </div>
@@ -90,7 +90,7 @@
                     </h2>
                     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#FaqAccordion">
                       <div class="accordion-body">
-                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                      Vestibulum lobortis dolor lorem, malesuada sagittis eros feugiat vel. Nam sed auctor mauris, sit amet ullamcorper tellus. Pellentesque lacinia, lacus sit amet maximus pretium, ante urna semper sapien, vitae porttitor justo eros at mi. Aenean lobortis quis dui non ullamcorper. Aenean vestibulum laoreet consequat. Fusce ac nunc sapien. Nullam tristique est eu dolor hendrerit, at volutpat lectus varius. Pellentesque imperdiet eleifend euismod. Vivamus non tristique diam. Nunc a urna quis odio suscipit egestas. Curabitur ac malesuada nibh. Nam id magna ut leo euismod molestie. Fusce posuere, lectus ut aliquam faucibus, massa risus malesuada purus, sed placerat libero enim in lacus. Sed ac ultricies lacus.
                       </div>
                     </div>
                   </div>
@@ -102,7 +102,7 @@
                     </h2>
                     <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#FaqAccordion">
                       <div class="accordion-body">
-                        There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec posuere sem. Aliquam ligula augue, ultricies fringilla luctus at, mollis eget purus. Pellentesque eu nulla eu leo iaculis fringilla at at tellus. Sed id nunc sodales, blandit velit eu, pretium nunc. Maecenas eu faucibus sapien. Cras elementum facilisis risus, nec consectetur tortor tempus a. Duis velit velit, feugiat quis sagittis sed, ultricies pulvinar sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam fringilla rhoncus ligula, a lacinia orci dapibus eget. Phasellus mauris est, consequat non ultricies in, euismod mattis quam. Curabitur vel vulputate nunc.
                       </div>
                     </div>
                   </div>
