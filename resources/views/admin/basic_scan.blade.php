@@ -8,7 +8,7 @@
 				<div class="row">
 					<div class="col-xl-10 main-content ps-xl-4 pe-xl-5">
 						<h1 class="page-title">Basic Scan</h1>
-						<p class="lead">A slideshow component for cycling through elements—images or slides of text—like a carousel. Read the <a href="https://getbootstrap.com/docs/5.1/components/carousel/" target="_blank">Official Bootstrap Documentation</a> for a full list of instructions and other options.</p>
+						<!-- <p class="lead">A slideshow component for cycling through elements—images or slides of text—like a carousel. Read the <a href="https://getbootstrap.com/docs/5.1/components/carousel/" target="_blank">Official Bootstrap Documentation</a> for a full list of instructions and other options.</p> -->
 
 
 						<div class="example">
